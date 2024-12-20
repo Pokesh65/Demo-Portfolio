@@ -1,0 +1,100 @@
+.About-Div {
+
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.About-container {
+    position: absolute;
+    width: 70vw;
+    height: 70vh;
+    top: 20vh;
+    /* background-color: #3c3d3738; */
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    border-radius: 20px;
+    row-gap: 3vh;
+    /* box-shadow: 1px 1px 10px 3px #697565; */
+}
+
+.About-container div {
+    /* margin-top: 2vh; */
+    margin-left: 5vh;
+    
+}
+
+.about-me {
+    margin-top: 4vh;
+    font-family: "Playwrite HR Lijeva", cursive;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-size: xx-large;
+    font-style: normal;
+    color: white;
+}
+
+.discription {
+    margin-top: -2vh;
+    width: 65vw;
+    font-family: "Jaldi", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 18px;
+    color: white;
+    /* text-shadow: 1px 1px 3px green; */
+}
+
+.discription p{
+    word-spacing: 4px;
+}
+
+
+.skils-head{
+    font-family: "Playwrite HR Lijeva", cursive;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-size: x-large;
+    color: white;
+    /* text-shadow: 2px 1px 4px lightseagreen; */
+
+}
+
+.my-skills{
+ 
+    
+}
+
+.skill-lists{
+    width: 70vw;
+    font-family: "Jaldi", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 18px;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left:-6vw;
+}
+
+.skill-lists li{
+    /* padding: 10px 10px; */
+    width: 8vw;
+    height: 5vh;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: radial-gradient(circle farthest-corner at 32.7% 82.7%, #697565 8.3%, #181f16 79.4%);
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px 1px white;
+  
+}

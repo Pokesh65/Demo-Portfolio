@@ -1,0 +1,192 @@
+.Home-Div {
+    background-color: black;
+    width:100%;
+    height: 100vh;
+    overflow-x: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Home-Container {
+    position: absolute;
+    width: 80vw;
+    height: 70vh;
+    top: 20vh;
+    background-color: #3c3d3738;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px 3px black;
+    transition: all 2s;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+    
+
+}
+.Home-Container:hover{
+    box-shadow: 0px 0px 10px 0px white;
+
+}
+
+.text-heading {
+    margin-top: -40px;
+    opacity: 0;
+    animation: slideInFromLeft 2.5s cubic-bezier(0.25, 1, 0.5, 1);
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100vw);
+        opacity: 0;
+
+    }
+
+    60% {
+        transform: translateX(10px);
+        opacity: 1;
+
+    }
+
+    80% {
+        transform: translateX(-5px);
+
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+
+    }
+}
+
+.welcome-text {
+    color: #5a58b0;
+    font-family: "Ms Madi", cursive;
+    font-weight:bolder;;
+    font-size:60px;
+    text-shadow: 1px 1px 2px white;
+    font-style: normal;
+}
+
+.welcome-text~p {
+    width: 40vw;
+    color: white;
+    font-size: 25px;
+    font-family: "Cookie", cursive;
+    font-weight: lighter;
+    font-style: normal;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    overflow: hidden;
+    animation: text-Anime 5s step-start ease-in-out 1s 1 linear forwards,
+    curser .4s step-end infinite forwards;
+
+}
+
+
+p span {
+    margin-left: 5px;
+    color: #608BC1;
+    font-size: x-large;
+    text-shadow: 1px 1px 1px whitesmoke;
+    font-family: "Ms Madi", cursive;
+    font-weight: bold;
+    font-size: 35px;
+    font-style: normal;
+}
+
+
+
+
+.profile {
+    border-radius: 4px;
+    width: 20vw;
+    height: 50vh;
+    border-radius: 200px 200px 40px 40px;
+    -webkit-border-radius: 200px 200px 40px 40px;
+    -moz-border-radius: 200px 200px 40px 40px;
+    border: 2px groove white;
+    position: relative;
+    overflow: hidden;
+    opacity: 1;
+    transition: all;
+    animation: fallFromTopRight 1.5s ease-out;
+    animation-delay: 0s;
+}
+
+@keyframes fallFromTopRight {
+    0% {
+        transform: translate(120vw, -120vh); /* Start from top-right corner */
+        opacity: 0;
+    }
+
+    20% {
+        transform: translate(80vh, -80vh); /* Fall to its position */
+        opacity: 1;
+    }
+
+    40% {
+        transform: translate(0, -50px) rotate(-5deg);
+        opacity: 1;
+    }
+
+    60% {
+        transform: translate(0, 0) rotate(5deg);
+        opacity: 1;
+    }
+
+    70% {
+        transform: translate(0, -30px) rotate(-3deg);
+        opacity: 1;
+    }
+
+    80% {
+        transform: translate(0, 0) rotate(3deg);
+        opacity: 1;
+    }
+
+    85% {
+        transform: translate(0, -15px) rotate(-2deg);
+        opacity: 1;
+    }
+
+    90% {
+        transform: translate(0, 0) rotate(2deg);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translate(0, 0) rotate(0);
+        opacity: 1;
+    }
+}
+
+.profile{
+    cursor: pointer;
+    box-shadow: 1px 1px 4px 2px black;
+    transition: all 2s;
+}
+
+.profile:hover{
+    top:10px;
+    cursor: pointer;
+    box-shadow: 1px 1px 10px 3px rgb(0 0 0), 23px 0px 0px 7px grey, -20px 0px 0px 7px white, 0px -25px 0px 10px rgb(109, 187, 144), 0px -15px 0px 30px #7f8080;
+
+}
+
+.Profile-img {
+    position: absolute;
+    width: 41vh;   /* Set width to 300px */
+    height: auto;   /* Maintain aspect ratio */
+    /* top: 5px; */
+    vertical-align: middle;
+    object-fit: contain;
+
+}
+
